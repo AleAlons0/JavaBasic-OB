@@ -2,7 +2,7 @@ package com.alejodev.project2;
 
 public class ProjectTwo {
 
-    private static double iva= 0.19;
+    private static double iva= 1.19;
 
     public static void main(String[] args) {
 
@@ -11,6 +11,6 @@ public class ProjectTwo {
 
     }
     public static double getprice(double price) {
-        return price + (price * iva);
+        return price * iva;
     }
 }
