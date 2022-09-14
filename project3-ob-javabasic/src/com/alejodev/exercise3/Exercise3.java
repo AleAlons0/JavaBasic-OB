@@ -5,12 +5,15 @@ import static java.awt.SystemColor.text;
 public class Exercise3 {
 
     public static void main(String[] args) {
-        String[] textos = {"funciones","datos","holaMundo"};
+        String[] textos = {"Hola","soy","java","developer"};
         int counter= 0;
-        String text= null;
         while(counter<textos.length) {
-            text = textos[counter] + " " + textos[counter++];
+            String text="";
+            for (int i=0; i<textos.length; i++) {
+                text += " "+ textos[i];
+                counter++;
+            }
+            System.out.println(text);
         }
-        System.out.println(text);
     }
 }
